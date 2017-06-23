@@ -7,3 +7,6 @@ https://rexadrivan.wordpress.com/2017/06/23/human-query-language/
 Live Link:
 https://adrivanrex.github.io/Human-Query-Language/
 
+I forumulated the Idea by answering the question = 
+
+What is add?
