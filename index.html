@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Bot</title>
+</head>
+<body>
+<form action="#">
+    <input type="text" id="data">
+</form>
+<script>
+Person = {};
+
+Utok = Object.create(Person);
+Utok.Person = Object.create({});
+Utok.Person.Rex = Object.create({"Name": "Rex", "Age": 26});
+Utok.Person.Van = Object.create({"Name":"Van", "Age": 30});
+Utok.Person.Mylene = Object.create({"Name": "Mylene"});
+Utok.Thing = Object.create({});
+Utok.Thing.Solid = Object.create({});
+Utok.Thing.Liquid = Object.create({});
+Utok.Thing.Gas = Object.create({});
+Utok.Letter = Object.create({});
+Utok.Letter.UpperCase = Object.create({});
+Utok.Letter.UpperCase.A = Object.create({});
+Utok.Letter.LowerCase = Object.create({});
+Utok.Letter.LowerCase.a = Object.create({});
+Utok.Letter.LowerCase.b = Object.create({});
+Utok.Letter.LowerCase.c = Object.create({});
+Utok.Letter.LowerCase.d = Object.create({});
+Utok.Letter.LowerCase.e = Object.create({});
+Utok.Idea = Object.create({});
+Utok.Number = Object.create({});
+console.log(Utok);
+Utok.Pangksyon = Object.create({});
+
+Storage = {};
+
+Human = {};
+Bot = {};
+
+pangksyon = {
+    "add":function(a,b){
+        return a+b;
+    },
+    "subtract": function(a,b){
+        return a-b;
+    },
+    "multiply":function(a,b){
+        return a*b;
+    },
+    "divide": function (a,b){
+        return a/b;
+    },
+};
+
+
+function search(a){
+    for (var i = Object.keys(Utok).length - 1; i >= 0; i--) {
+        if(Object.keys(Utok)[i]==a){
+            return "found";
+        }
+    }
+};
+
+
+
+
+console.log(search("Letter"));
+document.onkeypress =  zx;
+
+function zx(e){
+    var charCode = (typeof e.which == "number") ? e.which : e.keyCode
+    console.log(charCode);
+    if(charCode == 13){
+        let data = document.getElementById("data").value;
+        console.log(data);
+    }
+}
+
+console.log("What is add?");
+
+</script>
+</body>
+</html>
+
+The difference between human and AI;
+Humans know while Bot does not know unless you teach them;
