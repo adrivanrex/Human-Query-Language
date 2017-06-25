@@ -65,3 +65,7 @@ word = {
     }
 
 }
+
+error = {
+    "repeat":{},
+}
